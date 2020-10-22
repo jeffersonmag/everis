@@ -1,0 +1,63 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #9bae0c;
+        }
+
+        #corpo {
+            width: 1000px;
+            background-color: #efefef;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        #topo a {
+            text-decoration: none;
+        }
+
+        .texto-menu {
+            margin-top: 1.25rem;
+            font-family: "Helvetica-thin";
+            font-size: 1.625rem;
+            padding-left: 30px;
+            margin-bottom: 1.25rem;
+            display: inline-block;
+            color: #9bae0c;
+            text-shadow: 0.1em 0.1em 0.2em gray;
+            font-weight: 100;
+        }
+
+        .texto-corpo {
+            margin-top: 1.25rem;
+            font-family: "Helvetica-thin";
+            font-size: 1rem;
+            padding-left: 30px;
+            margin-bottom: 1.25rem;
+            display: inline-block;
+            color: #505050;
+            padding: 30px;
+            font-weight: 100;
+        }
+    </style>
+    <div id="corpo">
+        <div id="topo">
+            <nav>
+                <a href="http://localhost/everis/?pagina=descricao" class="texto-menu">HOME</a>
+                <a href="http://localhost/everis/?pagina=chamados" class="texto-menu">MEUS CHAMADOS</a>
+                <!--<a href="http://localhost/everis/?pagina=cadastro" class="texto-menu">CADASTRO</a>-->
+                <a href="http://localhost/everis/home/logout" class="texto-menu">SAIR</a>
+            </nav>
+            <hr>
+            </hr>
+        </div>
+        <p class="texto-corpo">Olá {{usuario}}, Seja bem-vindo ao sistema de Gestão de chamados.<br><br></p>
+        <div><p class="texto-corpo">DESENVOLVIDO POR JEFFERSON PARAIZO MAGALHÃES</p></div>
+    </div>
+</body>
+
+</html>

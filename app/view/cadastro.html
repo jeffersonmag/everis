@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PROJETO EVERIS - JEFFERSON</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="box_login">
+        <h1> CADASTRAR </h1>
+        <form method="POST" action="http://localhost/everis/cadastrar/newuser">
+            <input type="text" name="nome" placeholder="NOME">
+            <input type="text" name="cpf" placeholder="CPF">
+            <input type="text" name="usuario" placeholder="USUÁRIO">
+            <input type="password" name="senha" placeholder="SENHA">
+            <button class="btn-login"> CADASTRAR </button>
+            {% if error != '' %}
+            <span class="msg_error" style="text-align: center; font-size: 13px;"><i
+                    class="fa fa-exclamation-circle"></i> Problema ao cadastrar</span>
+            {% endif %}
+        </form>
+    </div>
+</body>
+
+</html>
